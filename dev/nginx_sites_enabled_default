@@ -17,6 +17,12 @@ server {
 	listen 80 default_server;
 	listen [::]:80 default_server;
 
+
+	location / {
+        include proxy_params;
+        proxy_pass http://unix:/home/john/johnhammond.org/johnhammond.sock;
+    }
+
 	error_page 404 /custom_404.html;
 	location = /custom_404.html {
 		root /var/www/html/custom_errors;
