@@ -1,0 +1,119 @@
+/* This font is used for my LARGE name logo */
+@font-face{
+	font-family: Fipps;
+	src: url('../font/Fipps-Regular.otf');
+}
+
+/* This font is used for my small name logo */
+@font-face{
+	font-family: Zero4B;
+	src: url('../font/04b03b.TTF');
+}
+
+/* This font is used for stylized text and headers */
+@font-face{
+	font-family: Volter;
+	src: url('../font/Volter.ttf');
+}
+
+h1 {
+	margin-top: 40px;
+	font-family: Volter;
+	font-size: 203%;
+}
+
+html{
+
+	width: 800px;
+	margin: 0px auto;
+	padding: 0 0;
+}
+body{
+	font-family: Ubuntu;
+	/*width:800px;*/
+	
+	display: block;
+	padding: 0px 30px 0px 30px;
+	margin: 0 auto;
+	border-left: 1px solid silver;
+	border-right: 1px solid silver;
+}
+
+nav{
+	text-align: center;
+	font-family: Zero4B;
+	font-size: 120%;
+}
+
+nav a:hover{
+	color: teal;
+
+}
+
+nav li{
+	color: dodgerblue;
+	display: inline-block;
+	/*background-color: yellow;*/
+	padding: 0 20px;
+}
+
+nav li:hover{
+	color: deepskyblue;
+	text-decoration: underline;
+}
+
+#banner_link{
+	color: black;
+	text-decoration: none;
+}
+
+#banner_link img{
+
+	display: inline-block;
+	height: 100px;
+	width: inherit;
+	vertical-align: middle;
+	float: right;
+	border: 2px solid white;
+	border-radius: 50%;
+	box-shadow: 0px 0px 5px gray;
+	margin-right: 20px;
+	margin-top: -10px;
+	
+}
+
+
+#banner{
+	font-family: Fipps;
+	font-size: 250%;
+	padding: 30px 00px;
+	display: block;
+
+	/* Disable select & click */
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+a, a:hover, a:visited{
+	color: dodgerblue;
+}
+
+#banner2{
+	font-family: Zero4B;
+	font-size: 330%;
+
+	/* Disable select & click */
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+ins{
+
+	border: 1px solid silver;
+	float:right;
+}

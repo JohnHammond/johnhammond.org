@@ -1,0 +1,34 @@
+{% extends "template.html" %}
+		
+{% block content %}
+
+<img height=40px style="float:right; margin-top:80px" src="{{ url_for('static', filename='img/ctftime_logo.png') }}">
+<h1> I play CTFs and wargames. </h1>
+<p>
+	Capture the Flag competitions are my favorite things. 
+</p>
+<p>
+	I keep track of current games with <a href="https://ctftime.org/">CTFTime</a>, the <a href="https://reddit.org/">securityCTF subreddit</a>, <a href="https://www.hackerone.com/zerodaily">Zero Daily</a>, and other sources.
+</p>
+<h1> But practice makes perfect. </h1>
+
+<p> So I try my hand at wargames: always-online challenges to hone your skills. </p>
+
+
+<p> Don't get me wrong, I'm not very good: but I like to try. So here is a list of my writeups: </p>
+
+<table>
+	<tr>
+		<td> OverTheWire: Natas </td>
+		<td> OverTheWire: Leviathan </td>
+		<td> OverTheWire: Bandit </td>
+	</tr>
+	<tr>
+		<td> PicoCTF </td>
+		<td> Ryan's CTF </td>
+		<td> SANS Holiday Hack Challenge 2015 </td>
+
+	</tr>
+</table>
+
+{% endblock %}

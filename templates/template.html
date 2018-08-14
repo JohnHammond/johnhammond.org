@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>johnhammond.org</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/master.css') }}">
+	</head>
+	<body>
+
+		<a href="{{ url_for('index') }}" id="banner_link"><span id="banner"> johnhammond 
+			<img src="{{url_for('static', filename='img/me.jpeg' )}}"></span></a>
+
+		<nav>
+			<a href="{{ url_for('programming') }}"> <li> Programming </li></a>
+			<a href="{{ url_for('writeups') }}"> <li> Writeups </li></a>
+			<a href="#"> <li> Voice Acting </li></a>
+			<a href="#"> <li> Graphic Design</li></a>
+			<!-- <a href="#"> <li> Photography</li> </a>  -->
+		</nav>
+		
+		{% block content %}{%endblock %}
+		
+	</body>
+</html>

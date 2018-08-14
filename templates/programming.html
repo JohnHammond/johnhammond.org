@@ -1,0 +1,38 @@
+{% extends "template.html" %}
+		
+{% block content %}
+
+
+<img height=130px style="float:right; margin-top: 30px;" src="{{url_for('static', filename='img/html-css-javascript.png')}}">
+<h1> Code is cool. </h1>
+
+<p>
+	I started to program before I was in high school. 
+</p>
+<p>
+	Back then, I learned HTML, CSS, and JavaScript. I got into PHP &amp; MySQL, too!  
+</p>
+<img height=75px style="display: block;margin: 0 auto;" src="{{url_for('static', filename='img/ubuntu.png')}}">
+<p> That rolled into a snow ball effect, so I found Linux and now I use Ubuntu as my host OS. </p>
+<p>
+	I tried to get into Java, and I learned the jist of C and C++. 
+</p>
+<p>
+	I tinkered with stuff like Ruby and Perl &mdash; so I picked up Regular Expressions...
+</p>
+<img height=120px src="{{url_for('static', filename='img/python_logo.png') }}" style="float:left;">
+<p>
+	But I fell in love with Python.
+</p>
+<p>
+	Python is my "weapon of choice," my go-to language whenever I actually want to develop something or accomplish a task. Years ago I released some basic Python tutorials on my YouTube channel. 
+</p>
+<img height=120px src="{{url_for('static', filename='img/github_logo.png') }}" style="float:right;margin-top: 30px; margin-right: 30px;">
+<h1> So check out my projects! </h1>
+
+
+<p> I have a GitHub repository filled with junk. Some of it is good junk. </p>
+
+<p> You can be the judge. <a href="https://github.com/JohnHammond/"> https://github.com/JohnHammond/</a> </p>
+
+{% endblock %}
