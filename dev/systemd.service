@@ -1,0 +1,8 @@
+[Unit]
+After=network.target
+
+[Service]
+ExecStart=/home/john/johnhammond.org/run_gunicorn.sh
+
+[Install]
+WantedBy=default.target

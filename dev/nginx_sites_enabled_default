@@ -35,6 +35,12 @@ server {
 		internal;
 	}
 
+	error_page 502 /custom_502.html;
+	location = /custom_502.html {
+		root /var/www/html/custom_errors;
+		internal;
+	}
+
 	# SSL configuration
 	#
 	# listen 443 ssl default_server;

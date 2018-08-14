@@ -12,6 +12,9 @@ apt-get install -y python-pip python-dev
 
 pip install gunicorn flask
 
-cp upstart_init.conf /etc/init/johnhammond.conf
 
-start johnhammond
+
+cp systemd.service /etc/systemd/system/johnhammond.service
+
+systemctl daemon-reload
+systemctl enable johnhammond.service
