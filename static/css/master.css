@@ -136,9 +136,19 @@ td{
 	position: fixed;
 	top: 150px;
 	/*left: -200px;*/
-	margin-left: -165px;
+	/*margin-left: -205px;*/
 	display: inline;
 	
-	float: right;
 	border: 1px solid silver; 
+}
+
+.adsbygoogle_right{
+	margin-left: 825px;
+	
+}
+
+.adsbygoogle_left{
+
+	margin-left: -205px;
+	
 }
