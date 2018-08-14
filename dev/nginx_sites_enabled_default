@@ -20,7 +20,7 @@ server {
 
 	location / {
         include proxy_params;
-        proxy_pass http://unix:/home/john/johnhammond.org/johnhammond.sock;
+        proxy_pass http://127.0.0.1:8000;
     }
 
 	error_page 404 /custom_404.html;
