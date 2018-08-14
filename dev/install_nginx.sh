@@ -10,4 +10,4 @@ fi
 apt-get update
 apt-get install -y nginx
 
-sudo /etc/init.d/nginx start
+systemctl status nginx.service
