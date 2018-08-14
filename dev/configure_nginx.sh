@@ -7,10 +7,11 @@ then
 fi
 
 # Create a backup of the original settings...
-mv /etc/nginx/sites-enabled/default /etc/nginx/sites-enabled/default.backup
+###### This actually will not work because nginx will test it and see duplicates..
+#mv /etc/nginx/sites-enabled/default /etc/nginx/sites-enabled/default.backup
 
 # Copy over our custom
-cp nginx_sites_enabled_default /etc/nginx/sites-enabled/default
+cp -f nginx_sites_enabled_default /etc/nginx/sites-enabled/default
 
 # Test the configuration settings
 nginx -t
