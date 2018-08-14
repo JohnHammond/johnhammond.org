@@ -19,7 +19,7 @@ server {
 
 	error_page 404 /custom_404.html
 	location = /custom_404.html {
-		root /var/www/html;
+		root /var/www/html/custom_errors;
 		internal;
 	}
 
