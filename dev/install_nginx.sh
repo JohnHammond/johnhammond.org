@@ -8,6 +8,6 @@ fi
 
 
 apt-get update
-apt-get install nginx
+apt-get install -y nginx
 
 sudo /etc/init.d/nginx start
