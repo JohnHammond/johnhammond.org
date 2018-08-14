@@ -1,0 +1,29 @@
+{% extends "template.html" %}
+		
+{% block content %}
+		
+		<h1> ERROR: 404! PAGE NOT FOUND!  </h1>
+
+		<p>
+			Whoops! Someone shot the server with a shotgun!
+		</p>
+		<p>
+			The Internet is not found!
+		</p>
+
+		<h1> You're in a place that doesn't exist.</h1>
+		<p>
+			No big deal, it happens all the time.
+		</p>
+		<p>
+			Maybe you mistyped a URL? I mean, it's cool. Like whatever man.
+		</p>
+		<h1>
+			"If you fail, just try, <em>try again</em>."
+		</h1>
+		<p>
+			But don't do that this time; you'll just fail again. Try a different link!
+		</p>
+		<img style="margin: 0 auto; display: block;" src="{{ url_for('static', filename = 'img/error.jpg') }}">
+
+{% endblock %}

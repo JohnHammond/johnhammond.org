@@ -118,6 +118,10 @@ p{
 	/*text-indent: 13px;*/
 }
 
+a img:hover{
+	/*filter: drop-shadow(0 0 5px silver);*/
+}
+
 table{
 	padding: 10px;
 	width:100%;
@@ -126,4 +130,15 @@ table{
 td{
 	padding: 8px;
 	text-align: center;
+}
+
+.adsbygoogle_left{
+	position: fixed;
+	top: 150px;
+	/*left: -200px;*/
+	margin-left: -165px;
+	display: inline;
+	
+	float: right;
+	border: 1px solid silver; 
 }
