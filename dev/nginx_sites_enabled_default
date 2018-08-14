@@ -23,6 +23,12 @@ server {
 		internal;
 	}
 
+	error_page 403 /custom_403.html;
+	location = /custom_403.html {
+		root /var/www/html/custom_errors;
+		internal;
+	}
+
 	# SSL configuration
 	#
 	# listen 443 ssl default_server;
