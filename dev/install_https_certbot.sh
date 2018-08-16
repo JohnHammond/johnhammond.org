@@ -7,9 +7,11 @@ then
 fi
 
 sudo apt-get update
-sudo apt-get install software-properties-common
-sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get install -y software-properties-common
+echo "" | sudo add-apt-repository ppa:certbot/certbot
 sudo apt-get update
-sudo apt-get install python-certbot-nginx 
+sudo apt-get install -y python-certbot-nginx 
 
-sudo certbot --nginx
+printf "johnhammond010@gmail.com\nA\nN\njohnhammond.org,www.johnhammond.org\n2" | sudo certbot --nginx
+
+sudo ufw allow

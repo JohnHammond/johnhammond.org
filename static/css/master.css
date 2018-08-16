@@ -152,3 +152,21 @@ td{
 	margin-left: -205px;
 	
 }
+
+footer{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+
+}
+
+
+footer li{
+	font-family: Volter;
+	color: gray;
+	font-size: small;
+}
+
+footer li:hover{
+	color: black;
+}

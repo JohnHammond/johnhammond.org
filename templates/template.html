@@ -3,8 +3,9 @@
 <html>
 
 	<head>
-		<title>johnhammond.org</title>
+		<title>John Hammond</title>
 		<meta charset="utf-8">
+		<link rel="shortcut icon" type="image/ico" href="{{ url_for('static', filename='ico/favicon.ico') }}"/>
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/master.css') }}">
 		<script src="{{url_for('static', filename='js/jquery.js')}}"></script>
 	</head>
@@ -17,7 +18,7 @@
 			<a href="{{ url_for('programming') }}"> <li> Programming </li></a>
 			<a href="{{ url_for('writeups') }}"> <li> Writeups </li></a>
 			<a href="{{ url_for('voice_acting') }}"> <li> Voice Acting </li></a>
-			<a href="#"> <li> Graphic Design</li></a>
+			<a href="{{ url_for('graphic_design') }}"> <li> Graphic Design</li></a>
 			<!-- <a href="#"> <li> Photography</li> </a>  -->
 		</nav>
 		
@@ -48,5 +49,12 @@
 		
 		{% block content %}{%endblock %}
 		
+		<footer>
+			<nav>
+				<a href="#"><li> contact </li></a>
+				<a href="#"><li> résumé </li></a>
+			</nav>
+		</footer>
+
 	</body>
 </html>
