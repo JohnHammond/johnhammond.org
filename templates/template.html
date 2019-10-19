@@ -13,7 +13,7 @@
 	<body>
 
 		<a href="{{ url_for('index') }}" id="banner_link"><span id="banner"> johnhammond 
-			<img src="{{url_for('static', filename='img/me.jpeg' )}}"></span></a>
+			<img src="{{url_for('static', filename='img/me.png' )}}"></span></a>
 
 		<nav>
 			<a href="{{ url_for('programming') }}"> <li> Programming </li></a>
@@ -53,7 +53,7 @@
 		<footer>
 			<nav>
 				<a href="mailto:johnhammond010@gmail.com"><li> contact </li></a>
-				<a href="#"><li> résumé </li></a>
+				<a href="{{ url_for('static', filename='misc/John_Hammond_Resume.pdf') }}"><li> résumé </li></a>
 			</nav>
 		</footer>
 
